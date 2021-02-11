@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <head>
+        <h1>Formulário de registo</h1>
+    </head>
+
+    <section>
+        <form class="formulario" action="submit.html">
+            <p>
+                <label for="name" class="label">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="nome">
+            </p>
+            <p>
+                <label for="sName" class="label">Sobrenome:</label>
+                <input type="text" name="sName" id="sName" placeholder="sobrenome">
+            </p>
+            <p>
+                <label for="idade" class="label">Idade:</label>
+                <input type="number" name="idade" id="idade" placeholder="idade">
+            </p>
+            <p>
+                <label for="e-mail" class="label">E-mail:</label>
+                <input type="text" name="e-mail" id="e-mail" placeholder="meu_e-mail@email.com">
+            </p>
+            <p>
+                <label for="cpf" class="label">CPF:</label>
+                <input type="number" name="cpf" id="cpf" placeholder="123.456.789-00">
+            </p>
+            <p>
+                <label for="cnh" class="label">CNH:</label>
+                <input type="number" name="cnh" id="cnh" placeholder="nº de registro">
+            </p>
+            <p>
+                <label for="rg" class="label">Número de identidade:</label>
+                <input type="number" name="rg" id="rg" placeholder="nº de identidade">
+            </p>
+
+            <p>
+                <label for="genero" class="label">Genero:</label>
+                <select name="genero" class="sexo">
+                    <option value="null">Informe seu genero</option>
+                    <option value="masculinio">Masculinio</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </p>
+
+            <p><span class="label">Usuário ativo:</span>
+                <label>
+                    <input type="radio" name="atividade" value="sim">Sim, sou ativo.
+                </label>
+                <label>
+                    <input type="radio" name="atividade" value="não">Não, não participo.
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+            
+        </form>
+    </section>
+</body>
+</html>
