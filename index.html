@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <!--Páginas CSS-->
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <head>
+    <header>
         <h1>Formulário de registo</h1>
-    </head>
-
+    </header>
+    <!--Corpo do formulário-->
     <section>
         <form class="formulario" action="submit.html">
             <p>
                 <label for="name" class="label">Nome:</label>
-                <input type="text" name="name" id="name" placeholder="nome">
+                <input type="text" name="name" id="nome" placeholder="nome">
             </p>
             <p>
-                <label for="sName" class="label">Sobrenome:</label>
-                <input type="text" name="sName" id="sName" placeholder="sobrenome">
+                <label for="sobName" class="label">Sobrenome:</label>
+                <input type="text" name="sobName" id="sobName" placeholder="sobrenome">
             </p>
             <p>
                 <label for="idade" class="label">Idade:</label>
@@ -29,24 +30,24 @@
             </p>
             <p>
                 <label for="e-mail" class="label">E-mail:</label>
-                <input type="text" name="e-mail" id="e-mail" placeholder="meu_e-mail@email.com">
+                <input type="email" name="e-mail" id="e-mail" placeholder="meu_e-mail@email.com">
             </p>
             <p>
                 <label for="cpf" class="label">CPF:</label>
-                <input type="number" name="cpf" id="cpf" placeholder="123.456.789-00">
+                <input type="number" name="cpf" id="cpf" placeholder="123.456.789-00" maxlength="11">
             </p>
             <p>
-                <label for="cnh" class="label">CNH:</label>
-                <input type="number" name="cnh" id="cnh" placeholder="nº de registro">
+                <label for="cnh" class="label">Carteira de Habilitação:</label>
+                <input type="number" name="cnh" id="cnh" placeholder="nº de registro" maxlength="11">
             </p>
             <p>
-                <label for="rg" class="label">Número de identidade:</label>
-                <input type="number" name="rg" id="rg" placeholder="nº de identidade">
+                <label for="rg" class="label">Carteira de Identidade:</label>
+                <input type="number" name="rg" id="rg" placeholder="nº de identidade" maxlength="8">
             </p>
 
             <p>
-                <label for="genero" class="label">Genero:</label>
-                <select name="genero" class="sexo">
+                <span class="label">Genero:</span>
+                <select name="genero" class="sexo" id="genero">
                     <option value="null">Informe seu genero</option>
                     <option value="masculinio">Masculinio</option>
                     <option value="feminino">Feminino</option>
@@ -54,20 +55,30 @@
                 </select>
             </p>
 
-            <p><span class="label">Usuário ativo:</span>
+            <p><span class="label">Sou um usuário ativo:</span>
                 <label>
-                    <input type="radio" name="atividade" value="sim">Sim, sou ativo.
+                    <input type="radio" id="ativo" name="atividade">Sim.
                 </label>
                 <label>
-                    <input type="radio" name="atividade" value="não">Não, não participo.
+                    <input type="radio" id="nAtivo" name="atividade">Não.
                 </label>
             </p>
-
+            <!--Botão enviar-->
             <p>
-                <input type="submit" value="Enviar">
+                <input type="submit" class="btn" value="Enviar" onclick="enviar()">
             </p>
+            <div id="resultado">
+
+            </div>
             
         </form>
     </section>
+        <footer>
+            <p>&copy; 2021 Diego Bernardes.</p>
+            <!--Páginas JS-->
+            <script src="form_app.js"></script>
+
+        </footer>
+    
 </body>
 </html>

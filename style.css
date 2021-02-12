@@ -2,10 +2,15 @@ body{
     background-color: rgba(77, 82, 148, 0.842);
     color: white;
 }
-h1{
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*header*/
+header h1{
     font-size: 3em;
     text-align: center;
 }
+/*container*/
 section{
     color: black;
     background-color: white;
@@ -19,18 +24,7 @@ section{
 p{
     padding: 5px;
 }
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.formulario input[type="submit"]{
-    padding: 10px 45px;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 400;
-    background-color: rgb(77, 82, 148);
-    border-radius: 5px;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.489);
-}
+/*form*/
 .formulario .label{
     display: inline-block;
     text-align: right;
@@ -38,23 +32,39 @@ p{
     width: 200px;
 }
 .formulario input{
-    font-size: 1.2em;
-    font-family: monospace;
     padding: 3px 6px;
-  /*  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.489);*/
-    border-radius: 4px;    
+    font-style: italic;
 }
 .formulario .sexo{
-    padding: 3px 24px;  
-  
+    padding: 3px 20px; 
+    font-style: italic;
+}
+/*buttom*/
+.formulario input[type="submit"]{
+    padding: 10px 45px;
+    color: white;
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: rgb(77, 82, 148);
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.489);
 }
 /*Abaixo desta linha remove os botoes do input type="number"*/
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+    
 }
 input[type="number"] {
     -moz-appearance: textfield;
 }
 /*Acima desta linha remove os botoes do input type="number"*/
+/*footer*/
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+}
