@@ -11,11 +11,11 @@
 </head>
 <body>
     <header>
-        <h1>Formulário de registo</h1>
+        <h1>Formulário de registro</h1>
     </header>
     <!--Corpo do formulário-->
     <section>
-        <form class="formulario" action="submit.html">
+        <form class="formulario" onsubmit="enviar(); return false;">
             <p>
                 <label for="name" class="label">Nome:</label>
                 <input type="text" name="name" id="nome" placeholder="nome">
@@ -51,7 +51,7 @@
                     <option value="null">Informe seu genero</option>
                     <option value="masculinio">Masculinio</option>
                     <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
+                    <option value="outro">Prefiro não informar</option>
                 </select>
             </p>
 
@@ -65,9 +65,9 @@
             </p>
             <!--Botão enviar-->
             <p>
-                <input type="submit" class="btn" value="Enviar" onclick="enviar()">
+                <input type="submit" class="btn" value="Enviar">
             </p>
-            <div id="resultado">
+            <div id="res">
 
             </div>
             
